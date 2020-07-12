@@ -1,0 +1,40 @@
+{
+  "1. /": "To get All the API's",
+
+  "2. /user/signup": "POST || To Signup in the complete app",
+  "3. /user/signin": "POST || To Signin in the complete app",
+
+  "4. /customer/setup/:userId": "POST || To Fill the details of Customer",
+  "5. /customer/update/:cusId": "PUT || To Update the detauls of Customer",
+  "6. /customer/getall": "GET || To Get all the customers",
+  "7. /customer/getactive": "GET || To Get all the customers who are in emergency",
+  "8. /customer/toactive/:cusId": "PUT || To Update the emergency status",
+
+  "9. /ambulance/registered/:userId": "POST || To Registered the Ambulance",
+  "10. /ambulance/updatepos/:ambId": "PUT || To Update the Position of Ambulance",
+  "11. /ambulance/getall": "GET || To Get all the ambulances",
+
+  "12. /factory/register/:userId": "POST || To Register the Factory",
+  "13. /factory/updated/:factId": "PUT || To Update the Verification of Factory",
+
+  "14. /supplier/register/:userId": "POST || To Register the Supplier",
+  "15. /supplier/updated/:supId": "PUT || To Update the Verification of Supplier",
+
+  "16. /distributor/register/:userId": "POST || To Register the Distributor",
+  "17. /distributor/updated/:disId": "PUT || To Update the Verification of Distributor",
+
+  "18. /hospital/register/:userId": "POST || To Register the hospital",
+  "19. /hospital/updated/:hosId": "PUT || To Update the Verification of hospital",
+  "20. /hospital/getall": "GET || To GET all the hospital",
+
+  "21. /doctor/register/:userId": "POST || To Register the doctor",
+  "22. /doctor/updated/:docId": "PUT || To Update the Verification of doctor",
+  "23. /doctor/getall": "GET || To Get all the doctors",
+
+  "24. /factory/medicine/:factId": "POST || To Create the Medicine",
+  "25. /supplier/medicine/:supId": "POST || To Update the Exisiting Medicine",
+  "26. /distributor/medicine/:disId": "POST || To Update the Existing Medicine",
+
+  "27. /customer/medicine": "GET || To Get all the Medicines",
+  "28. /customer/medicine/:barCode": "GET || Validate Medicine or Not"
+}

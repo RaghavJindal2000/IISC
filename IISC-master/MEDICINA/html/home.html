@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/home.css">
+                <link rel="stylesheet" type="text/css" href="../css/splash.css">
+    <title>Document</title>
+</head>
+<body>
+    <center><div class="box"><div class="heading" style="color: black;">
+        <h1>MEDICINA</h1>
+        <p>ALEXA TOTAL SUPPORT</p></div></center>
+        <nav class="menu">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open">
+            <span class="lines line-1"></span>
+            <span class="lines line-2"></span>
+            <span class="lines line-3"></span>
+        </label>
+    
+        <a href="doctor.html" class="menu-item blue" data-toggle="modal" data-target="#doctor" style="transform: rotate()(45deg);"> <i class="fa fa-user-md"></i> </a>
+        <a href="customer.html" class="menu-item green" data-toggle="modal" data-target="#customer"> <i class="fa fa-user-circle"></i> </a>
+        <a href="ambulance.html" class="menu-item red" data-toggle="modal" data-target="#ambulance"> <i class="fa fa-ambulance"></i> </a>
+        <a href="factory.html" class="menu-item purple" data-toggle="modal" data-target="#factory"> <i class="fa fa-medkit"></i> </a>
+        <!-- <a href="#" class="menu-item orange" data-toggle="modal" data-target="#distributor"> <i class="fa fa-truck"></i> </a>
+        <a href="#" class="menu-item lightblue" data-toggle="modal" data-target="#supplier"> <i class="fa fa-shopping-cart"></i> </a> -->
+    </nav>
+
+    <!-- Modal
+    <div class="modal fade" id="doctor" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="color: black; background-color: antiquewhite;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel" style="color: black;">INFO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="background-color: rgb(240, 106, 200);">
+                    <form action="validation.php" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                        <div class="form-group"><label>NAME: &nbsp;</label><input type="text" class="form-control-sm"
+                                placeholder="Name" name="name" id="name" required><br></div>
+                        <div class="form-group"><label>VERIFICATION NO: &nbsp;</label><input type="text" class="form-control-sm"
+                                placeholder="Verification No" name="verificationNo" id="verificationNo" required><br></div>
+                        <div class="form-group"><label>EMAIL-ID: &nbsp;</label><input type="email" class="form-control-sm"
+                                placeholder="Email-id" name="email" id="email" required><br></div>
+                        <div class="form-group"><label>CONTACT NO: &nbsp;</label><input type="number" class="form-control-sm"
+                                placeholder="Phone No" name="phoneNo" id="phoneNo" required><br></div>
+                        <div class="form-group"><label>HOSPITAL: &nbsp;</label><input type="text" class="form-control-sm"
+                                        placeholder="Hospital" name="hospital" id="hospital" required><br></div>
+                        <p>CHOOSE YOUR POSITION: </p>
+                        <div> <input type="radio" name="pos" id="core" value="CORE-MEMBER" required> <label><b>CORE-MEMBER</b></label>
+                            <input type="radio" name="pos" id="board" value="BOARD-MEMBER"> <label><b>BOARD MEMBER</b></label></div>
+                        <div class="form-group"><label>UPLOAD YOUR PHOTO: &nbsp;</label><input type="file" class="form-control-sm"
+                                name="image" id="photo" required></div>
+                        <input type="submit" class="btn btn-success button" name="upload" value="signup">
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="customer" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">INFO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ambulance" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">INFO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="supplier" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">INFO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="distributor" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">INFO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="factory" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">INFO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</html>
